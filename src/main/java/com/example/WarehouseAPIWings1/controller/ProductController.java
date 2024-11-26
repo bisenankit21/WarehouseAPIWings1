@@ -40,7 +40,7 @@ public class ProductController {
 
     //To get the product with the value using pathvariable.
     @GetMapping("/product/vendor")
-    public ResponseEntity<Object> getSimilarVendor(@PathVariable String value) {
+    public ResponseEntity<Object> getSimilarVendor(@RequestParam String value) {
         return productService.getSimilarVendor(value);
     }
 }
